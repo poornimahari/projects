@@ -19,6 +19,13 @@ class EmployeesController extends Controller
             'employeewebhistory' => $employees
         ]);
     }
+  public static function getemployeeData($ip_address)
+    {
+        $employees = employees::where('ip_address',$ip_address)->first();
+        echo  response()->json([
+            'employeewebhistory' => $employees
+        ]);
+    }
 
     /**
      * Show the form for creating a new resource.

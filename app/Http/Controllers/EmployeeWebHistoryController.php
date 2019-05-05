@@ -12,6 +12,26 @@ class EmployeeWebHistoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public static function getwebhistoryData($url,$ipaddress)
+{
+   
+
+    $webhistory = employee_web_history::where('ip_address',$ipaddress)->first();
+
+        if(!empty($webhistory)){
+            if($webhistory->url!=''){
+                $webhistory = $webhistory;
+            } else{
+                $webhistory = 'NULL';
+            }
+
+        }else{
+            $webhistory = "Resource Not Found";
+        }
+        echo response()->json([
+            'employeewebhistory' => $webhistory
+        ]);
+}
     public function index(Request $request)
     {
         $webhistory = employee_web_history::where('ip_address',$request->ip_address)->first();
@@ -81,7 +101,7 @@ class EmployeeWebHistoryController extends Controller
         ]);
        
     }
-
+    
     /**
      * Display the specified resource.
      *
@@ -132,6 +152,22 @@ class EmployeeWebHistoryController extends Controller
         $message = 'Nothing to delete';
        }
        return response()->json([
+        'message' => $message
+    ]);
+        
+    }
+
+
+    public static function webhistorydel($ip_address)
+    {
+        $webhistory = employee_web_history::where('ip_address',$ip_address);
+       if(!empty($webhistory)){
+        $webhistory->delete();
+        $message = 'Successfully deleted websearch history!';
+       }else{
+        $message = 'Nothing to delete';
+       }
+       echo response()->json([
         'message' => $message
     ]);
         

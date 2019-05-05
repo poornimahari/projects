@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Inspiring;
-
+use App\Http\Controllers\EmployeeWebHistoryController;
 /*
 |--------------------------------------------------------------------------
 | Console Routes
@@ -13,6 +13,7 @@ use Illuminate\Foundation\Inspiring;
 |
 */
 
-Artisan::command('inspire', function () {
-    $this->comment(Inspiring::quote());
+
+Artisan::command('inspixxre', function () {
+    $this->comment(EmployeeWebHistoryController::someStaticMethod());
 })->describe('Display an inspiring quote');
