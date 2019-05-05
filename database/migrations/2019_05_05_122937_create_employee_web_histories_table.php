@@ -4,23 +4,20 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateEmployeeWebHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('employee_web_histories', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name',100);
-            $table->string('email',100)->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password',100);
-            $table->rememberToken();
+            $table->string('ip_address',250);
+            $table->text('url')->nullable();
+            $table->timestamp('date')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('employee_web_histories');
     }
 }
