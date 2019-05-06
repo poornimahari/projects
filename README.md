@@ -1,5 +1,5 @@
 <h2>Laravel Custom command programming</h2>
-Installation
+<h3>Installation</h3>
 git clone https://github.com/poornimahari/projects.git projectname
 cd projectname
 composer install
