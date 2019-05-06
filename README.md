@@ -8,7 +8,8 @@
 git clone https://github.com/poornimahari/projects.git projectname
 <br>cd projectname
 <br>composer install
-<br>Create a database and inform .env
+<br>Create a database and .env file
+<br>Add database information in env file
 <br>php artisan migrate to create and populate tables
 <h3>Data Commands</h3>
 <br>SET empdata  [ip_address] [emp_name] [emp_id] (Order should be same)
