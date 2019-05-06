@@ -6,7 +6,7 @@ git clone https://github.com/poornimahari/projects.git projectname
 <br>Create a database and inform .env
 <br>php artisan migrate to create and populate tables
 <h3>Data Commands</h3>
-<br>SET empdata  [ip_address] [emp_name] [emp_id]
+<br>SET empdata  [ip_address] [emp_name] [emp_id] (Order should be same)
 <br>Insert the employee details to employee table  with data, ip_address, emp_name ,emp_id.
 <br>GET empdata [ip_address]: Get the employee details having the ip_address
 <br>UNSET empdata [ip_address]: Soft delete the data  having the passed ip_address
