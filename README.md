@@ -1,4 +1,4 @@
-Laravel Custom command programming
+<h2>Laravel Custom command programming</h2>
 Installation
 git clone https://github.com/poornimahari/projects.git projectname
 cd projectname
