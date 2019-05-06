@@ -65,7 +65,6 @@ class EmployeeWebHistoryController extends Controller
 
         echo response()->json([
             'message' => 'Great success! webhistory created !',
-            'employeewebhistory' => $webhistory
         ]);
        
     }

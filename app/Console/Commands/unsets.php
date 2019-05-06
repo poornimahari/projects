@@ -17,7 +17,7 @@ class unsets extends Command
      */
     //protected $signature = 'command:name';
 
-    protected $signature = 'UNSET:command {table} {ip_address}';
+    protected $signature = 'UNSET {table} {ip_address}';
 
     /**
      * The console command description.

@@ -162,3 +162,144 @@ Did you mean this?
 #5 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #6 {main}
 "} 
+[2019-05-06 03:43:47] local.ERROR: There are no commands defined in the "SET" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"SET\" namespace. at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php:585)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('SET')
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(233): Symfony\\Component\\Console\\Application->find('SET:command')
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2019-05-06 03:44:00] local.ERROR: Not enough arguments (missing: "optional"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"optional\"). at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(250): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\set), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 03:49:51] local.ERROR: Property [url] does not exist on the Eloquent builder instance. {"exception":"[object] (Exception(code: 0): Property [url] does not exist on the Eloquent builder instance. at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php:1310)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Http\\Controllers\\EmployeeWebHistoryController.php(43): Illuminate\\Database\\Eloquent\\Builder->__get('url')
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\set.php(50): App\\Http\\Controllers\\EmployeeWebHistoryController::setWebhistory('192.168.10.18', NULL)
+#2 [internal function]: App\\Console\\Commands\\set->handle()
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#8 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\set), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2019-05-06 03:51:30] local.ERROR: Not enough arguments (missing: "optional"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"optional\"). at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(250): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\set), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 03:54:01] local.ERROR: Not enough arguments (missing: "ip_address"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"ip_address\"). at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(250): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\set), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 03:54:13] local.ERROR: Cannot add a required argument after an optional one. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\LogicException(code: 0): Cannot add a required argument after an optional one. at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Input\\InputDefinition.php:107)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Input\\InputDefinition.php(88): Symfony\\Component\\Console\\Input\\InputDefinition->addArgument(Object(Symfony\\Component\\Console\\Input\\InputArgument))
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(133): Symfony\\Component\\Console\\Input\\InputDefinition->addArguments(Array)
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(102): Illuminate\\Console\\Command->configureUsingFluentDefinition()
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\set.php(36): Illuminate\\Console\\Command->__construct()
+#4 [internal function]: App\\Console\\Commands\\set->__construct()
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(823): ReflectionClass->newInstanceArgs(Array)
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(667): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(615): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array)
+#8 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(757): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#9 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(258): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#10 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(233): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#11 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(149): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#12 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(72): Illuminate\\Console\\Application->bootstrap()
+#13 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(331): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '5.8.15')
+#14 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#15 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2019-05-06 03:56:37] local.ERROR: Not enough arguments (missing: "optional"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"optional\"). at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(250): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\set), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 04:02:59] local.ERROR: Not enough arguments (missing: "emp_id"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"emp_id\"). at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(250): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\set), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 04:15:32] local.ERROR: There are no commands defined in the "GET" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"GET\" namespace. at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php:585)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('GET')
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(233): Symfony\\Component\\Console\\Application->find('GET:command')
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2019-05-06 04:19:09] local.ERROR: syntax error, unexpected ';', expecting ']' {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected ';', expecting ']' at C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Http\\Controllers\\EmployeesController.php:32)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\get.php(48): spl_autoload_call('App\\\\Http\\\\Contro...')
+#3 [internal function]: App\\Console\\Commands\\get->handle()
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#8 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#9 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\get), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+"} 

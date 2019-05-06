@@ -18,7 +18,7 @@ class get extends Command
      */
     //protected $signature = 'command:name';
 
-    protected $signature = 'GET:command {table} {ip_address}';
+    protected $signature = 'GET {table} {ip_address}';
 
     /**
      * The console command description.

@@ -23,15 +23,23 @@ class EmployeesController extends Controller
   public static function getemployeeData($ip_address)
     {
         $employees = employees::where('ip_address',$ip_address)->first();
-        echo  response()->json([
+        if(!empty($employees)){
+            echo  response()->json([
             'employeewebhistory' => $employees
         ]);
+        }else{
+            echo  response()->json([
+            'message' => 'Resource not found'
+        ]);
+        }
+        
     }
-    public static function setempdata($ip_address,$emp_name)
+    public static function setempdata($ip_address,$emp_name,$emp_id)
     {
         $employees = new employees;
-        $employees->ip_address = $ip_address;
+        $employees->emp_id = $emp_id;
         $employees->emp_name = $emp_name;
+        $employees->ip_address = $ip_address;
         $employees->save();
         echo  response()->json([
             'message' => 'Successfully created employees details !',

@@ -17,7 +17,7 @@ class set extends Command
      */
     //protected $signature = 'command:name';
 
-    protected $signature = 'SET:command {table} {ip_address} {optional}';
+    protected $signature = 'SET {table}  {ip_address?} {optional?}  {emp_id?}';
 
     /**
      * The console command description.
@@ -43,12 +43,16 @@ class set extends Command
      */
     public function handle()
     {
-
-        if($this->argument('table') =='empdata'){
-          EmployeesController::setempdata($this->argument('ip_address'),$this->argument('optional'));  
+        if($this->argument('ip_address')!=''){
+            if($this->argument('table') =='empdata'){
+          EmployeesController::setempdata($this->argument('ip_address'),$this->argument('optional'),$this->argument('emp_id'));  
         }else{
            EmployeeWebHistoryController::setWebhistory($this->argument('ip_address'),$this->argument('optional'));  
         }
+        }else{
+           echo "Missing argument ip address!"; 
+        }
+        
         
        
     }
