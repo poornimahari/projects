@@ -1,4 +1,10 @@
 <h2>Laravel Custom command programming</h2>
+<h3>Prerequisites</h3>
+<br>For the purpose of this tutorial, I assume that you have a Laravel application installed on a web server. My setup is:
+
+<br>Laravel 5.7
+<br>PHP 7.2
+<br>MySQL
 <h3>Installation</h3>
 git clone https://github.com/poornimahari/projects.git projectname
 <br>cd projectname
