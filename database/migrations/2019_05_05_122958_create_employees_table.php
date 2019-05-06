@@ -18,6 +18,7 @@ class CreateEmployeesTable extends Migration
             $table->string('emp_id',250)->nullable();
             $table->string('emp_name',250)->nullable();
             $table->string('ip_address',250);
+            $table->integer('delete_status')->default(0);
             $table->timestamps();
         });
     }

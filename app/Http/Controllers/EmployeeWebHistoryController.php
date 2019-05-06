@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\employee_web_history;
+use App\employees;
+
 use Illuminate\Http\Request;
 
 class EmployeeWebHistoryController extends Controller
@@ -36,8 +38,9 @@ class EmployeeWebHistoryController extends Controller
    
      public static function setWebhistory($ipaddress,$url)
     {
-        
-        $webhistory = employee_web_history::where('ip_address',$ipaddress)->first();
+        $employees = employees::where('ip_address',$ipaddress)->first();
+        if(!empty($employees)){
+            $webhistory = employee_web_history::where('ip_address',$ipaddress)->first();
         
         if(!empty($webhistory)){
             if($webhistory->url!=''){
@@ -66,6 +69,12 @@ class EmployeeWebHistoryController extends Controller
         echo response()->json([
             'message' => 'Great success! webhistory created !',
         ]);
+        }else{
+          echo response()->json([
+            'message' => 'Ip address not mapped to any of the employee !',
+        ]);  
+        }
+        
        
     }
      public static function webhistorydel($ip_address)

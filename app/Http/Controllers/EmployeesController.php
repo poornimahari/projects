@@ -22,7 +22,7 @@ class EmployeesController extends Controller
     /*cmd programmming start*/
   public static function getemployeeData($ip_address)
     {
-        $employees = employees::where('ip_address',$ip_address)->first();
+        $employees = employees::where('ip_address',$ip_address)->where('delete_status',0)->first();
         if(!empty($employees)){
             echo  response()->json([
             'employeewebhistory' => $employees
@@ -40,6 +40,7 @@ class EmployeesController extends Controller
         $employees->emp_id = $emp_id;
         $employees->emp_name = $emp_name;
         $employees->ip_address = $ip_address;
+        $employees->delete_status = 0;
         $employees->save();
         echo  response()->json([
             'message' => 'Successfully created employees details !',
@@ -48,10 +49,14 @@ class EmployeesController extends Controller
     }
      public static function empdelete($ip_address)
     {
-        $employees = employees::where('ip_address',$ip_address);
+        $employees = employees::where('ip_address',$ip_address)->where('delete_status',0)->first();
        if(!empty($employees)){
-        $employees->delete();
+        $employees->delete_status = 1;
+       if($employees->save()){
         $message = 'Successfully deleted employees !';
+        }else{
+            $message = 'Oops Something went wrong !';
+        }
        }else{
         $message = 'Nothing to delete';
        }

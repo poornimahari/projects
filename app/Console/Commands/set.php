@@ -17,7 +17,7 @@ class set extends Command
      */
     //protected $signature = 'command:name';
 
-    protected $signature = 'SET {table}  {ip_address?} {optional?}  {emp_id?}';
+    protected $signature = 'SET {table} {ip_address?} {optional?} {emp_id?}';
 
     /**
      * The console command description.
