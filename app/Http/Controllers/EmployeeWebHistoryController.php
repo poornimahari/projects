@@ -12,7 +12,8 @@ class EmployeeWebHistoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public static function getwebhistoryData($url,$ipaddress)
+    /*Commandline programming start*/
+    public static function getwebhistoryData($ipaddress)
 {
    
 
@@ -32,7 +33,59 @@ class EmployeeWebHistoryController extends Controller
             'employeewebhistory' => $webhistory
         ]);
 }
-    public function index(Request $request)
+   
+     public static function setWebhistory($ipaddress,$url)
+    {
+        
+        $webhistory = employee_web_history::where('ip_address',$ipaddress)->first();
+        
+        if(!empty($webhistory)){
+            if($webhistory->url!=''){
+                $web =  explode(',',$webhistory->url);
+          
+           for($i=0;$i<count($web);$i++){
+               $webs[$i] =  $web[$i];
+           }
+           array_push($webs,$url);
+
+           $webSearch =  implode(',',$webs);
+           $webhistory->url = $webSearch;
+           $webhistory->save();
+            }
+           
+           
+        }else{
+            $webhistory = new employee_web_history;
+            $webhistory->ip_address = $ipaddress;
+            $webhistory->url = $url;
+            $webhistory->save();
+
+        }
+        
+
+        echo response()->json([
+            'message' => 'Great success! webhistory created !',
+            'employeewebhistory' => $webhistory
+        ]);
+       
+    }
+     public static function webhistorydel($ip_address)
+    {
+        $webhistory = employee_web_history::where('ip_address',$ip_address);
+       if(!empty($webhistory)){
+        $webhistory->delete();
+        $message = 'Successfully deleted websearch history!';
+       }else{
+        $message = 'Nothing to delete';
+       }
+       echo response()->json([
+        'message' => $message
+    ]);
+        
+    }
+
+    /*Commandline programming end*/
+     public function index(Request $request)
     {
         $webhistory = employee_web_history::where('ip_address',$request->ip_address)->first();
         if(!empty($webhistory)){
@@ -49,7 +102,6 @@ class EmployeeWebHistoryController extends Controller
             'employeewebhistory' => $webhistory
         ]);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -101,6 +153,7 @@ class EmployeeWebHistoryController extends Controller
         ]);
        
     }
+   
     
     /**
      * Display the specified resource.
@@ -152,22 +205,6 @@ class EmployeeWebHistoryController extends Controller
         $message = 'Nothing to delete';
        }
        return response()->json([
-        'message' => $message
-    ]);
-        
-    }
-
-
-    public static function webhistorydel($ip_address)
-    {
-        $webhistory = employee_web_history::where('ip_address',$ip_address);
-       if(!empty($webhistory)){
-        $webhistory->delete();
-        $message = 'Successfully deleted websearch history!';
-       }else{
-        $message = 'Nothing to delete';
-       }
-       echo response()->json([
         'message' => $message
     ]);
         

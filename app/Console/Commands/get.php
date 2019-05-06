@@ -4,10 +4,12 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Artisan;
+use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\EmployeeWebHistoryController;
+
 use Illuminate\Http\Request;
 
-class webhistorydelete extends Command
+class get extends Command
 {
     /**
      * The name and signature of the console command.
@@ -16,7 +18,7 @@ class webhistorydelete extends Command
      */
     //protected $signature = 'command:name';
 
-    protected $signature = 'webhistorydel:command {ip_address}';
+    protected $signature = 'GET:command {table} {ip_address}';
 
     /**
      * The console command description.
@@ -42,6 +44,11 @@ class webhistorydelete extends Command
      */
     public function handle()
     {
-        EmployeeWebHistoryController::webhistorydel($this->argument('ip_address'));
+        if($this->argument('table') =='empdata'){
+         EmployeesController::getemployeeData($this->argument('ip_address')); 
+        }else if($this->argument('table')=='empwebhistory'){
+        EmployeeWebHistoryController::getwebhistoryData($this->argument('ip_address'));
+        }
+        
     }
 }

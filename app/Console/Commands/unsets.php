@@ -5,8 +5,10 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Artisan;
 use App\Http\Controllers\EmployeeWebHistoryController;
+use App\Http\Controllers\EmployeesController;
+use Illuminate\Http\Request;
 
-class CallRoute extends Command
+class unsets extends Command
 {
     /**
      * The name and signature of the console command.
@@ -15,7 +17,7 @@ class CallRoute extends Command
      */
     //protected $signature = 'command:name';
 
-    protected $signature = 'getwebhistory:command {url} {ip_address}';
+    protected $signature = 'UNSET:command {table} {ip_address}';
 
     /**
      * The console command description.
@@ -41,6 +43,13 @@ class CallRoute extends Command
      */
     public function handle()
     {
-        EmployeeWebHistoryController::getwebhistoryData($this->argument('url'),$this->argument('ip_address'));
+        if($this->argument('table')=='empdata'){
+            EmployeesController::empdelete($this->argument('ip_address'));
+        }else if($this->argument('table')=='empwebhistory'){
+          EmployeeWebHistoryController::webhistorydel($this->argument('ip_address'));  
+        }else{
+            echo "NULL";
+        }
+        
     }
 }

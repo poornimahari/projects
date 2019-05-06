@@ -19,6 +19,7 @@ class EmployeesController extends Controller
             'employeewebhistory' => $employees
         ]);
     }
+    /*cmd programmming start*/
   public static function getemployeeData($ip_address)
     {
         $employees = employees::where('ip_address',$ip_address)->first();
@@ -26,7 +27,31 @@ class EmployeesController extends Controller
             'employeewebhistory' => $employees
         ]);
     }
-
+    public static function setempdata($ip_address,$emp_name)
+    {
+        $employees = new employees;
+        $employees->ip_address = $ip_address;
+        $employees->emp_name = $emp_name;
+        $employees->save();
+        echo  response()->json([
+            'message' => 'Successfully created employees details !',
+            'employees' => $employees
+        ]);
+    }
+     public static function empdelete($ip_address)
+    {
+        $employees = employees::where('ip_address',$ip_address);
+       if(!empty($employees)){
+        $employees->delete();
+        $message = 'Successfully deleted employees !';
+       }else{
+        $message = 'Nothing to delete';
+       }
+       echo  response()->json([
+        'message' => $message
+    ]);
+    }
+   /*cmd programmming end*/
     /**
      * Show the form for creating a new resource.
      *

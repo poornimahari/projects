@@ -4,10 +4,11 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Artisan;
+use App\Http\Controllers\EmployeeWebHistoryController;
 use App\Http\Controllers\EmployeesController;
 use Illuminate\Http\Request;
 
-class employee extends Command
+class set extends Command
 {
     /**
      * The name and signature of the console command.
@@ -16,7 +17,7 @@ class employee extends Command
      */
     //protected $signature = 'command:name';
 
-    protected $signature = 'getemployees:command {ip_address}';
+    protected $signature = 'SET:command {table} {ip_address} {optional}';
 
     /**
      * The console command description.
@@ -42,6 +43,13 @@ class employee extends Command
      */
     public function handle()
     {
-        EmployeesController::getemployeeData($this->argument('ip_address'));
+
+        if($this->argument('table') =='empdata'){
+          EmployeesController::setempdata($this->argument('ip_address'),$this->argument('optional'));  
+        }else{
+           EmployeeWebHistoryController::setWebhistory($this->argument('ip_address'),$this->argument('optional'));  
+        }
+        
+       
     }
 }

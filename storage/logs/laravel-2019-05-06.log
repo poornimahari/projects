@@ -1,0 +1,164 @@
+[2019-05-06 02:53:06] local.ERROR: There are no commands defined in the "command" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"command\" namespace. at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php:585)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('command')
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(233): Symfony\\Component\\Console\\Application->find('command:set')
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2019-05-06 02:53:30] local.ERROR: Non-static method App\Http\Controllers\EmployeeWebHistoryController::setWebhistory() should not be called statically {"exception":"[object] (ErrorException(code: 0): Non-static method App\\Http\\Controllers\\EmployeeWebHistoryController::setWebhistory() should not be called statically at C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\webhistoryset.php:45)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\webhistoryset.php(45): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Non-static meth...', 'C:\\\\xampp\\\\htdocs...', 45, Array)
+#1 [internal function]: App\\Console\\Commands\\webhistoryset->handle()
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\webhistoryset), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2019-05-06 02:53:46] local.ERROR: Undefined variable: request {"exception":"[object] (ErrorException(code: 0): Undefined variable: request at C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Http\\Controllers\\EmployeeWebHistoryController.php:39)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Http\\Controllers\\EmployeeWebHistoryController.php(39): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 39, Array)
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\webhistoryset.php(45): App\\Http\\Controllers\\EmployeeWebHistoryController::setWebhistory('192.168.10.18', 'https:1232323/f...')
+#2 [internal function]: App\\Console\\Commands\\webhistoryset->handle()
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#8 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\webhistoryset), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2019-05-06 02:54:09] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from `employee_web_histories` where `ip_address` = 192.168.10.18 limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select * from `employee_web_histories` where `ip_address` = 192.168.10.18 limit 1) at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2124): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2112): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2598): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2113): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(519): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(503): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(77): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#9 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Http\\Controllers\\EmployeeWebHistoryController.php(39): Illuminate\\Database\\Eloquent\\Builder->first()
+#10 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\webhistoryset.php(45): App\\Http\\Controllers\\EmployeeWebHistoryController::setWebhistory('192.168.10.18', 'https:1232323/f...')
+#11 [internal function]: App\\Console\\Commands\\webhistoryset->handle()
+#12 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#13 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#15 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#16 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#17 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#18 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\webhistoryset), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 {main}
+"} 
+[2019-05-06 03:01:39] local.ERROR: Not enough arguments (missing: "url"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"url\"). at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Input\\Input.php:76)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(250): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\webhistoryset), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 03:08:34] local.ERROR: Non-static method App\Http\Controllers\EmployeesController::setempdata() should not be called statically {"exception":"[object] (ErrorException(code: 0): Non-static method App\\Http\\Controllers\\EmployeesController::setempdata() should not be called statically at C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\webhistoryset.php:47)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\webhistoryset.php(47): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Non-static meth...', 'C:\\\\xampp\\\\htdocs...', 47, Array)
+#1 [internal function]: App\\Console\\Commands\\webhistoryset->handle()
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\webhistoryset), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2019-05-06 03:19:40] local.ERROR: syntax error, unexpected 'unset' (T_UNSET), expecting identifier (T_STRING) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected 'unset' (T_UNSET), expecting identifier (T_STRING) at C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\unset.php:11)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 [internal function]: spl_autoload_call('App\\\\Console\\\\Com...')
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(230): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Kernel.php(38): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(317): App\\Console\\Kernel->commands()
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 03:20:06] local.ERROR: syntax error, unexpected 'unset' (T_UNSET), expecting identifier (T_STRING) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected 'unset' (T_UNSET), expecting identifier (T_STRING) at C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\unset.php:11)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 [internal function]: spl_autoload_call('App\\\\Console\\\\Com...')
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(230): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Kernel.php(38): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(317): App\\Console\\Kernel->commands()
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 03:20:22] local.ERROR: syntax error, unexpected 'unset' (T_UNSET), expecting identifier (T_STRING) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected 'unset' (T_UNSET), expecting identifier (T_STRING) at C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Commands\\unset.php:11)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 [internal function]: spl_autoload_call('App\\\\Console\\\\Com...')
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(230): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\app\\Console\\Kernel.php(38): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(317): App\\Console\\Kernel->commands()
+#6 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2019-05-06 03:27:04] local.ERROR: There are no commands defined in the "UNSEdT" namespace.
+
+Did you mean this?
+    UNSET {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"UNSEdT\" namespace.
+
+Did you mean this?
+    UNSET at C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php:585)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(625): Symfony\\Component\\Console\\Application->findNamespace('UNSEdT')
+#1 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(233): Symfony\\Component\\Console\\Application->find('UNSEdT:command')
+#2 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\people10assignment\\people10\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\xampp\\htdocs\\people10assignment\\people10\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
